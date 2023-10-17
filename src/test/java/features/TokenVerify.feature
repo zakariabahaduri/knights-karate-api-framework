@@ -6,7 +6,7 @@ Feature: Security token verify
   When method post
   Then status 200
   And print response
-    
+
   Scenario: send request to api/token
     And path "/api/token/verify"
     And param username = "supervisor"

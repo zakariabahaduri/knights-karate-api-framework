@@ -29,6 +29,7 @@ Feature: Security Token API calls
       And assert response.httpStatus== "<httpStatus>"
       And assert response.errorMessage== "<errorMessage>"
       Examples:
-        |username|password|code_status|httpStatus|errorMessage|
-        |supervisor|adlkjf|400 |BAD_REQUEST |Password not matched|
-        |something  | tek_supervisor|404    |NOT_FOUND   |User something not found|
+        | username   | password       | code_status | httpStatus  | errorMessage             |
+        | supervisor | adlkjf         | 400         | BAD_REQUEST | Password not matched     |
+        | something  | tek_supervisor | 404         | NOT_FOUND   | User something not found |
+        
