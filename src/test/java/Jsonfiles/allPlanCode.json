@@ -1,0 +1,54 @@
+[
+  {
+    "createdBy": "SYSTEM",
+    "createdDate": 1697498602661,
+    "modifiedBy": "SYSTEM",
+    "modifiedDate": 1697498602786,
+    "id": 48,
+    "planType": "MOTORCYCLE",
+    "planBasePrice": 82.00,
+    "icon": "motorcycle",
+    "expirationDate": 1697585002661,
+    "planExpired": false,
+    "new": false
+  },
+  {
+    "createdBy": "SYSTEM",
+    "createdDate": 1697498602434,
+    "modifiedBy": "SYSTEM",
+    "modifiedDate": 1697498602560,
+    "id": 47,
+    "planType": "BOAT",
+    "planBasePrice": 418.00,
+    "icon": "directions_boat",
+    "expirationDate": 1697585002434,
+    "planExpired": false,
+    "new": false
+  },
+  {
+    "createdBy": "SYSTEM",
+    "createdDate": 1697498602207,
+    "modifiedBy": "SYSTEM",
+    "modifiedDate": 1697498602332,
+    "id": 46,
+    "planType": "RENTERS",
+    "planBasePrice": 12.00,
+    "icon": "house",
+    "expirationDate": 1697585002207,
+    "planExpired": false,
+    "new": false
+  },
+  {
+    "createdBy": "SYSTEM",
+    "createdDate": 1697498601982,
+    "modifiedBy": "SYSTEM",
+    "modifiedDate": 1697498602107,
+    "id": 45,
+    "planType": "AUTO",
+    "planBasePrice": 204.00,
+    "icon": "directions_car",
+    "expirationDate": 1697585001982,
+    "planExpired": false,
+    "new": false
+  }
+]
