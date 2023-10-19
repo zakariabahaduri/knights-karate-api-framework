@@ -3,7 +3,7 @@ Feature: add account with auto email generator
     Given url BASE_URL
     * def tokenResult = callonce read('GenerateToken.feature')
     * def validToken = "Bearer " + tokenResult.response.token
-
+    @Smoke
     Scenario: Create account with random email
       Given path "/api/accounts/add-primary-account"
       * def datagenerator = Java.type('data.DataGenerator')

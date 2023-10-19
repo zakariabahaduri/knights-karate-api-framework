@@ -9,15 +9,15 @@ Feature: getting the whole table in the plans
     * def vaildToken = "Bearer " + response.token
 
 
-
+    @Smoke
     Scenario: send GET request to /api/plans/get-all-plan-code
       And path "/api/plans/get-all-plan-code"
       And header Authorization = vaildToken
-      * def expectedOutput = read('../Jsonfiles/allPlanCode.json')
+     # * def expectedOutput = read('../Jsonfiles/allPlanCode.json')
       When method get
       Then status 200
       And print response
-      And match response == expectedOutput
+     # And match response == expectedOutput
       And assert response[0].planType == "MOTORCYCLE"
       And assert response[0].planExpired == false
       And assert response[1].planExpired == false

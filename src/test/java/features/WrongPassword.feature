@@ -1,4 +1,5 @@
 Feature: Inputting wrong password
+  @Smoke
   Scenario: send request to api/token
     Given url BASE_URL
     And path "/api/token"

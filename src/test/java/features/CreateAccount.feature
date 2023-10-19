@@ -33,12 +33,3 @@ And print response
 And response.httpStatus == "OK"
 And response.message == "Account Successfully deleted"
 
-Scenario: delete account
-  Given path "/api/accounts/delete-account"
-  And param primaryPersonId = 543
-  And header Authorization = validToken
-  And method delete
-  Then status 200
-  And print response
-  And response.httpStatus == "OK"
-  And response.message == "Account Successfully deleted"

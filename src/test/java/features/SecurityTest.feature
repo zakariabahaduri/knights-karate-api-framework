@@ -7,6 +7,7 @@ Feature: Security Token API calls
     Then status 200
 
 #testing with wrong username and password
+  @Smoke
   Scenario: send request to api/token
     Given url BASE_URL
     And path "/api/token"
@@ -15,7 +16,7 @@ Feature: Security Token API calls
     Then status 404
     And assert response.httpStatus== "NOT_FOUND"
     And assert response.errorMessage== "User something not found"
-
+    @Smoke
     Scenario Outline: Sending wrong usernames and passwords
       Given url BASE_URL
       And path "/api/token"
