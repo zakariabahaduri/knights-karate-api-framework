@@ -1,6 +1,6 @@
 Feature: Security Token API calls
   Scenario: send request to api/token
-    Given url "https://qa.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     And path "/api/token"
     And request {"username": "supervisor", "password": "tek_supervisor"}
     When method post
@@ -8,7 +8,7 @@ Feature: Security Token API calls
 
 #testing with wrong username and password
   Scenario: send request to api/token
-    Given url "https://qa.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     And path "/api/token"
     And request {"username": "something", "password": "wrongpassword"}
     When method post
@@ -17,7 +17,7 @@ Feature: Security Token API calls
     And assert response.errorMessage== "User something not found"
 
     Scenario Outline: Sending wrong usernames and passwords
-      Given url "https://qa.insurance-api.tekschool-students.com"
+      Given url BASE_URL
       And path "/api/token"
       And request
       """

@@ -1,6 +1,6 @@
 Feature: get/account
   Background:
-    Given url "https://qa.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     * def tokenResult = callonce read('GenerateToken.feature')
     * def validToken = "Bearer " + tokenResult.response.token
     Given path "/api/accounts/get-account"
