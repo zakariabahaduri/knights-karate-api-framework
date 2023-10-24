@@ -17,7 +17,7 @@ Feature: get/account
       And print response
       * def expectedid = 2
       And assert response.primaryPerson.id == expectedid
-  
+
   Scenario: get/account primary person id does not exist
     Given path "/api/accounts/get-account"
     Given param primaryPersonId = 150002

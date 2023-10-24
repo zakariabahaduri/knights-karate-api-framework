@@ -7,6 +7,7 @@ public class TestRunner {
     Karate  run () {
 return Karate.run("classpath:features").
         tags("@E2E ,@Smoke").
-        karateEnv("qa");
+        karateEnv("qa").
+        outputCucumberJson(true);
     }
 }
