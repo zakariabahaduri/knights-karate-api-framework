@@ -20,11 +20,11 @@ Feature: get/account
   @Smoke
   Scenario: get/account primary person id does not exist
     Given path "/api/accounts/get-account"
-    Given param primaryPersonId = 1200
+    Given param primaryPersonId = 150002
     And header Authorization = validToken
     And method get
     Then status 404
-    * def id = 1200
+    * def id = 150002
     And print response
     And assert response.httpStatus == "NOT_FOUND"
     And assert response.errorMessage == "Account with id " + id + " not found"
