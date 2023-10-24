@@ -6,7 +6,7 @@ public class TestRunner {
     @Karate.Test
     Karate  run () {
 return Karate.run("classpath:features").
-        tags("@Smoke").
+        tags("@E2E ,@Smoke").
         karateEnv("qa");
     }
 }
